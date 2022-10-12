@@ -15,11 +15,12 @@ self.addEventListener("install", (e) => {
 
 // Fetching content using Service Worker
 self.addEventListener("fetch", (e) => {
+  console.log('fetch');
   e.respondWith(
     (async () => {
       const response = await fetch(e.request);
       console.log('pino');
-      return response;
+      // return response;
       // try {
       //   console.log(
       //     `[Service Worker] Fetching resource from web: ${e.request.url}`
