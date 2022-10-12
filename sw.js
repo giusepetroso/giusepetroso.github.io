@@ -8,7 +8,12 @@ self.addEventListener("install", (e) => {
     (async () => {
       const cache = await caches.open(cacheName);
       console.log("[Service Worker] Caching all: app shell and content");
-      await cache.addAll(["/", "/page-1", "/page-2", "/home"]);
+      await cache.addAll([
+        "/",
+        "/page-1/index.html",
+        "/page-2/index.html",
+        "/home/index.html",
+      ]);
     })()
   );
 });
