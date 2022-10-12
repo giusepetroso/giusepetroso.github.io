@@ -17,6 +17,8 @@ self.addEventListener("install", (e) => {
 self.addEventListener("fetch", (e) => {
   e.respondWith(
     (async () => {
+      const response = await fetch(e.request);
+      return response;
       // try {
       //   console.log(
       //     `[Service Worker] Fetching resource from web: ${e.request.url}`
