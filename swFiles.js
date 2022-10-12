@@ -1,1 +1,1 @@
-const filesList = ["/page-1.html", "/page-2.html", "/home.html"];
+const filesList = ['/page-1/index.html','/page-2/index.html','/images/whatsapp-image-2022-03-21-at-16.46.53.jpeg'];
