@@ -18,6 +18,7 @@ self.addEventListener("fetch", (e) => {
   e.respondWith(
     (async () => {
       const response = await fetch(e.request);
+      console.log('pino');
       return response;
       // try {
       //   console.log(
