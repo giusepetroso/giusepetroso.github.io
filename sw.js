@@ -30,7 +30,7 @@ self.addEventListener("fetch", (e) => {
         console.log(
           `[Service Worker] Fetching resource from cache: ${e.request.url}`
         );
-        // return await caches.match(e.request);
+        return await caches.match(e.request);
       }
     })()
   );
